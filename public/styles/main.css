@@ -1,0 +1,154 @@
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Russo One", sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.currency-container > h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  height: 200px;
+  text-align: center;
+}
+
+.userLabel {
+  font-size: 2.5rem;
+}
+
+.userText {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+  min-height: 40px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: aliceblue;
+  -webkit-text-stroke-width: 0px !important;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.userText:hover {
+  transform: scale(1.1);
+}
+
+::placeholder {
+  color: aliceblue;
+}
+
+.yellow {
+  color: rgb(252, 214, 0);
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgb(135, 206, 235);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: aliceblue;
+  height: 2rem;
+  width: 2.2rem;
+  -webkit-text-stroke-width: 0px !important;
+}
+
+.getButton {
+  padding: 5px 8px !important;
+  transition: transform 0.2s; /* Animation */
+  width: 100px !important;
+}
+.getButton:hover {
+  transform: scale(
+    1.08
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.button {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgb(135, 206, 235);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: aliceblue;
+  transition: transform 0.2s; /* Animation */
+}
+.button:hover {
+  transform: scale(1.08);
+}
+
+/* .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+.currency-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-top: 20px;
+  height: 32rem;
+  width: 34rem;
+  text-align: center;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: flex;
+  align-items: flex;
+  flex-direction: column;
+}
+
+.currency-symbol {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.currency-features {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.currency-features li {
+  margin-bottom: 20px;
+}

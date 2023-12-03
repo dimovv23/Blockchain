@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Check</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="currency-container">
+      <% if(!locals.content){ %>
+      <h1>Exchange made easy: Compare crypto-fiat rates instantly!</h1>
+      <form id="myForm" method="post">
+        <div class="buttonHolder">
+          <input
+            class="userText"
+            type="text"
+            id="currSymbol"
+            name="symbol"
+            placeholder="Enter an exchange rate"
+          />
+          <input
+            class="button getButton"
+            type="submit"
+            value="SEARCH"
+            formaction="/get-data"
+          />
+        </div>
+      </form>
+      <% }else{ %>
+      <div class="currency-symbol yellow"><%= content %></div>
+      <ul class="currency-features">
+        <li id="price">
+          Price(24 hours): <span class="yellow"><%= price %></span>
+        </li>
+        <li id="volume">
+          Volume(24 hours): <span class="yellow"><%= volume %></span>
+        </li>
+        <li id="last-trade-price">
+          Last trade price:<br /><span class="yellow"><%= trade_price %></span>
+        </li>
+      </ul>
+      <button class="button" onclick="history.back()">
+        <i class="bx bx-arrow-back"></i>
+      </button>
+      <% } %>
+    </div>
+  </body>
+</html>
